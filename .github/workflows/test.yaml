@@ -8,7 +8,11 @@ jobs:
         steps:
             - name: checkout phase
               uses: actions/checkout@v3
-            - run: mkdir test
+            - run: |
+                  mkdir test
+                  ls .
             - run: |
                   touch play.txt
                   echo 'hello my name is github actions' > play.txt
+                  ls .
+                  cat play.txt

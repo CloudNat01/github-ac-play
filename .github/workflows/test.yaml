@@ -5,6 +5,7 @@ on:
     inputs:
       name:
         description: "This will ask for your name"
+        default: "name"
         type: choice
         options:
           - loveth
@@ -14,6 +15,7 @@ on:
       
       env:
         description: "what env to use"
+        default: "env"
         type: choice
         options:
           - prd

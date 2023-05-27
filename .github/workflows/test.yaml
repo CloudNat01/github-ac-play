@@ -33,6 +33,6 @@ jobs:
                   ls .
             - run: |
                   touch play.txt
-                  echo 'hello my name is $name, the env i want to use is $env' > play.txt
+                  echo 'hello my name is ${{ inputs.name }}, the env i want to use is ${{ inputs.env }}' > play.txt
                   ls .
                   cat play.txt

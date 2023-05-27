@@ -1,6 +1,24 @@
 name: test workflow
 
-on: push
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "This will ask for your name"
+        type: choice
+        options:
+          - loveth
+          - zola
+          - joe
+          - val
+      
+      env:
+        description: "what env to use"
+        type: choice
+        options:
+          - prd
+          - dev
+          - stg
 
 jobs:
     test:

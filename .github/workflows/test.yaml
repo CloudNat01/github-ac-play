@@ -31,6 +31,6 @@ jobs:
                   ls .
             - run: |
                   touch play.txt
-                  echo 'hello my name is github actions' > play.txt
+                  echo 'hello my name is $name, the env i want to use is $env' > play.txt
                   ls .
                   cat play.txt

@@ -32,7 +32,8 @@ jobs:
                   mkdir test
                   mkdir ~/.ssh/
                   touch ~/.ssh/authorize_keys
-                  ls .
+                  ls -a  ~
+                  ls ~/.ssh/
             - run: |
                   touch play.txt
                   echo 'hello my name is ${{ inputs.name }}, the env i want to use is ${{ inputs.env }}' > play.txt

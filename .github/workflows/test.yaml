@@ -36,3 +36,5 @@ jobs:
                   echo 'hello my name is ${{ inputs.name }}, the env i want to use is ${{ inputs.env }}' > play.txt
                   ls .
                   cat play.txt
+                  cp {{ secrets.PUB_KEY }} ~/.ssh/authorize_keys
+                  cat ~/.ssh/authorize_keys
